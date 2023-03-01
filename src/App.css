@@ -1,38 +1,178 @@
-.App {
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: linear-gradient(to right, #191825, #A86464);
+  font-family: sans-serif;
+}
+
+/* CALCULATOR SETUP */
+.Caculator-grid {
+  width: 410px;
+  height: 400px;
+  margin: 20px auto;
+  padding: 20px;
   text-align: center;
+  font-size: 20px;
+  color: aliceblue;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  background-color: #434242;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+/* CALCULATOR UNDER SCREEN */
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
+.output {
+  width: 405px;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: flex-end;
+  justify-content: space-around;
+  padding: 50px;
 }
 
-.App-link {
-  color: #61dafb;
+/*  */
+.calculator-button-sections{
+  text-align: center;
+  margin-left: -40px;
+  width: 450px;
+}
+/* FIRST LINE OF BUTTONS */
+.section-of-line1 {
+  width: 100%;
+  font-size: 18px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.section-of-line1 button:first-child {
+  width: 200px;
+  border-top-left-radius: 10px;
+}
+
+.section-of-line1 button {
+  width: 101px;
+  height: 50px;
+  color: aliceblue;
+  font-size: 20px;
+  background-color: rgb(75, 69, 68);
+  border: 1px solid #434242;
+}
+
+.section-of-line1 button:last-child {
+  border-top-right-radius: 10px;
+
+  background-color: rgb(232, 158, 14);
+}
+
+.section-of-line1 button:hover {
+  background-color: grey;
+  color: #191825;
+}
+
+/* SECOND LINES OF BUTTON */
+.section-of-line2 {
+  width: 100%;
+}
+
+.section-of-line2 button {
+  width: 100px;
+  height: 50px;
+  color: aliceblue;
+  font-size: 20px;
+  background-color: rgb(75, 69, 68);
+  border: 1px solid #434242;
+}
+
+.section-of-line2 button:last-child {
+  background-color: rgb(232, 158, 14);
+  width: 101px;
+}
+
+.section-of-line2 button:hover {
+  background-color: grey;
+  color: #191825;
+}
+
+/* THIRD LINE OF BUTTON */
+.section-of-line3 {
+  width: 100%;
+}
+
+.section-of-line3 button {
+  width: 100px;
+  height: 50px;
+  color: aliceblue;
+  font-size: 20px;
+  background-color: rgb(75, 69, 68);
+  border: 1px solid #434242;
+}
+
+.section-of-line3 button:last-child {
+  background-color: rgb(232, 158, 14);
+  width: 101px;
+}
+
+.section-of-line3 button:hover {
+  background-color: grey;
+  color: #191825;
+}
+
+/* FORTH BUTTONS */
+.section-of-line4 {
+  width: 100%;
+}
+
+.section-of-line4 button {
+  width: 100px;
+  height: 50px;
+  color: aliceblue;
+  font-size: 20px;
+  background-color: rgb(75, 69, 68);
+  border: 1px solid #434242;
+}
+
+.section-of-line4 button:last-child {
+  background-color: rgb(232, 158, 14);
+  width: 101px;
+}
+
+.section-of-line4 button:hover {
+  background-color: grey;
+  color: #191825;
+}
+
+/* FIRST LINE OF BUTTONS */
+.section-of-line5 {
+  width: 100%;
+}
+
+.section-of-line5 button:first-child {
+  width: 200px;
+}
+
+.section-of-line5 button {
+  width: 101px;
+  height: 50px;
+  color: aliceblue;
+  font-size: 20px;
+  background-color: rgb(75, 69, 68);
+  border: 1px solid #434242;
+}
+
+.section-of-line5 button:first-child {
+  border-bottom-left-radius: 10px;
+}
+
+.section-of-line5 button:last-child {
+  background-color: rgb(232, 158, 14);
+  border-bottom-right-radius: 10px;
+}
+
+.section-of-line5 button:hover {
+  background-color: grey;
+  color: #191825;
 }
